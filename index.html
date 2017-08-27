@@ -5,9 +5,52 @@ text that will be ignored by the computer! -->
   <meta charset="UTF-8"> <!-- This line defines something called "character encoding"
   This will allow the browser to display certain characters (such as non-Roman letters) correctly.
   You should include this line in the head of all of your webpages. -->
-  <title>My Notes</title> <!-- This is the title of your page (what appears in the name of a browser tab) -->
+  <title>Movie Page</title> <!-- This is the title of your page (what appears in the name of a browser tab) -->
   <link rel="stylesheet" href="style.css"> <!-- This line links your CSS stylesheet to your HTML (see Lesson 1.3) -->
 </head>
-<body> <!-- The body tag is where the "flesh" of your HTML goes -->
-  <!-- Write your main HTML content here -->
+<body>
+  <div class="header">
+    <h1>My Favorite Movies</h1>
+  </div>
+  <nav>
+    <div class="genre">
+      <ul>
+        <li><a href="#action">Action</a></li>
+        <li><a href="#drama">Drama</a></li>
+        <li><a href="#comedy">Comedy</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div id="action">
+    <h2>Action</h2>
+    <div id="ironman1">
+      <h3>Iron-Man</h3>
+      <div class="summary">
+        <div class="poster"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_SY1000_CR0,0,674,1000_AL_.jpg" alt="ironman1_pic" style="width:200px;height:300px;"/></div>
+        <div class="description">After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.</div>
+      </div>
+    </div>
+  </div>
+  <div id="drama">
+    <h2>Drama</h2>
+    <div id="dunkirk">
+      <h3>Dunkirk</h3>
+      <div class="summary">
+        <div class="poster"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BN2YyZjQ0NTEtNzU5MS00NGZkLTg0MTEtYzJmMWY3MWRhZjM2XkEyXkFqcGdeQXVyMDA4NzMyOA@@._V1_SY1000_CR0,0,674,1000_AL_.jpg" alt="dunkirk_pic" style="width:200px;height:300px;"/></div>
+        <div class="description">Allied soldiers from Belgium,
+        the British Empire and France are surrounded by the German army and evacuated during a fierce battle in World War II.</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="comedy">
+    <h2>Comedy</h2>
+    <div id="loganlucky">
+      <h3>Logan-Lucky</h3>
+      <div class="summary">
+      <div class="poster"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTYyODg0NDU1OV5BMl5BanBnXkFtZTgwNjcxMzU0MjI@._V1_.jpg" alt="loganlucky_pic" style="width:200px;height:300px;"/></div>
+      <div class="description">Two brothers attempt to pull off a heist during a NASCAR race in North Carolina.</div>
+      </div>
+    </div>
+  </div>
 </body>
